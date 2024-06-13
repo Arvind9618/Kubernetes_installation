@@ -1,0 +1,54 @@
+Kubernetes (Kubeadm) Installation on Ubuntu 20.04 AWS Instances
+--------------------
+Prerequisites
+Create AWS Instances:
+Provision a minimum of 2 AWS t2.medium instances with Ubuntu 20.04.
+Configure the Security Group to allow all traffic.
+Steps to Run on Both Master and Worker Nodes
+
+1.Install Docker on All Machines
+  Update the package list and install Docker:
+  "sudo apt update"
+  "sudo apt install docker.io -y"
+
+  Verify Docker installation:
+  "docker --version"
+
+
+2.Run the Installation Script "install.sh" on all machines:
+   Make the script executable and run it:
+  "chmod +x install.sh"
+  "bash install.sh"
+  Verify the installation of Kubernetes components:
+  "which kubeadm && which kubectl && which kubelet"
+
+Steps on the Master Node
+3.Initialize the Kubernetes Cluster
+  Switch to the root user:
+  "sudo su"
+  Initialize the cluster:
+  "kubeadm init"
+
+4. Configure kubectl for a Non-root User
+  Switch back to the normal user and run the following commands:
+  "mkdir -p $HOME/.kube"
+  "sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config"
+  "sudo chown $(id -u):$(id -g) $HOME/.kube/config"
+
+5. Install a Network Plugin
+  Install Weave Net for networking:
+  "kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml"
+  Verify the nodes:
+  "kubectl get nodes -w"
+
+Steps on the Worker Nodes
+6. Join the Worker Nodes to the Cluster
+  On the master node, after initializing the cluster, you will receive a join command with a token. Copy this command and run it on each worker node as the root user:
+  sudo su
+  <join-command-from-master>
+
+  Setting Instance Hostnames
+  Set the hostname on the master node:
+  "sudo su"
+  "hostnamectl set-hostname master"
+  "exec bash"
