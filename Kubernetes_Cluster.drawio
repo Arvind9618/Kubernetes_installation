@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2024-06-14T19:30:52.537Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.5.4" etag="NepOKTJ9J-0ejj1LDnSF" type="github">
+  <diagram name="Page-1" id="7zXJ12E4eelY002bGFxs">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Add-ons" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="56" width="499" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Kubernetes Dashboard" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="2">
+          <mxGeometry x="43" y="33" width="175" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Heapster" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="2">
+          <mxGeometry x="268" y="33" width="80" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="InfluxDB" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="2">
+          <mxGeometry x="398" y="33" width="74" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Networking" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="186" y="134" width="239" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="CNI" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="6">
+          <mxGeometry x="43" y="33" width="39" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="kube-dns" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="6">
+          <mxGeometry x="132" y="33" width="80" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Node Components" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="63" y="268" width="485" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="kubelet" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="9">
+          <mxGeometry x="43" y="33" width="70" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="kube-proxy" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="9">
+          <mxGeometry x="163" y="33" width="96" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Container Runtime" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="9">
+          <mxGeometry x="309" y="33" width="149" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Master Components" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry y="402" width="612" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="kube-apiserver" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="13">
+          <mxGeometry x="43" y="33" width="122" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="kube-controller-manager" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="13">
+          <mxGeometry x="215" y="33" width="195" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="kube-scheduler" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="13">
+          <mxGeometry x="460" y="33" width="125" height="34" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
