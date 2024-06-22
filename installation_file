@@ -19,6 +19,8 @@ Steps to Run on Both Master and Worker Nodes
    Make the script executable and run it:
   "chmod +x install.sh"
   "bash install.sh"
+  if getting any errors please install dos2unix and convert the file to unix format and proceed
+  "sudo apt install dos2unix -y"
   Verify the installation of Kubernetes components:
   "which kubeadm && which kubectl && which kubelet"
 
